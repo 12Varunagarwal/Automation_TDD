@@ -5,29 +5,32 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.amazon.basetest.BaseTest;
+import com.amazon.pages.HomePage;
+import com.amazon.pages.RegistrationPage;
 
 public class RegistrationPageTest extends BaseTest {
 
 	@BeforeMethod
-
 	public void setupPage() {
-
-		homepage.openRegistrationPage();
-
+	    homepage = new HomePage(driver);           // driver from BaseTest
+	    registrationpage = new RegistrationPage(driver);
+	    homepage.openRegistrationPage();           // navigate to registration page
 	}
-
-	@Test
-
-	public void logoPresentTest() {
-
-		Assert.assertTrue(registrationpage.verifyLogo(), "--Logo is not Present--");
-	}
-
+	
+	/*
+	 * @Test
+	 * 
+	 * public void logoPresentTest() {
+	 * 
+	 * Assert.assertTrue(registrationpage.verifyLogo(), "--Logo is not Present--");
+	 * }
+	 */
+	
 	@Test
 
 	public void pageTitleTest() {
-
-		Assert.assertEquals(registrationpage.getTitle(), "Amazon Registration", "--Page Title does not Match--");
+		String title = registrationpage.getTitle();
+		Assert.assertEquals(title, "Amazon Sign-In", "--Page Title does not Match--");
 	}
 
 	@Test

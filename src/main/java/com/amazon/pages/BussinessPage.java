@@ -8,7 +8,7 @@ import com.amazon.base.BaseClass;
 public class BussinessPage extends BaseClass{
 	
 	public BussinessPage(WebDriver driver) {
-		super(driver);
+	
 		PageFactory.initElements(driver,this);
 		
 	}

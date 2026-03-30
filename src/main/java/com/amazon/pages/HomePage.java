@@ -8,50 +8,36 @@ import org.openqa.selenium.support.PageFactory;
 import com.amazon.base.BaseClass;
 
 public class HomePage extends BaseClass {
-	 
-	
-	private BaseClass basepage;
-	 
-	
-	@FindBy(xpath="//div[@id='nav-link-accountList']")
-	public WebElement accountsAndLists;
-	
-	@FindBy(xpath="//span[@class='nav-action-inner']")
-	public WebElement btnSignIn;
-	
 
-	@FindBy(xpath="//a[@class='nav-a']")
-	public WebElement btnNewCustomerStartHere;
-	
-	
+    @FindBy(xpath="//div[@id='nav-link-accountList']")
+    public WebElement accountsAndLists;
 
-	public HomePage(WebDriver driver) {
-		super(driver);
-		PageFactory.initElements(driver,this);
-	
-		
-		
-	}
+    @FindBy(xpath="//span[@class='nav-action-inner']")
+    public WebElement btnSignIn;
 
-	public void openRegistrationPage() {
-		
-		basepage.moveToElement(accountsAndLists);
-		basepage.click(btnNewCustomerStartHere);
-		
-		
-	}
+    @FindBy(xpath="//a[@class='nav-a']")
+    public WebElement btnNewCustomerStartHere;
 
-	public void openSignInPage() {
-			
-		basepage.moveToElement(accountsAndLists);
-		basepage.click(btnSignIn);
-		
-		
-	}
+    // ✅ Constructor that calls BaseClass constructor
+    public HomePage(WebDriver driver) {
+        super(driver);                  // Initialize BaseClass with driver
+        PageFactory.initElements(driver, this); // Optional, but safe
+    }
 
-	public String getTitleOfThePage() {
-		// TODO Auto-generated method stub
-		return getTitle();
-	}
+    // Open Registration Page
+    public void openRegistrationPage() {
+        moveToElement(accountsAndLists);    
+        click(btnNewCustomerStartHere);     
+    }
 
+    // Open SignIn Page
+    public void openSignInPage() {
+        moveToElement(accountsAndLists);    
+        click(btnSignIn);                   
+    }
+
+    // Get Page Title
+    public String getTitleOfThePage() {
+        return getTitle();                  
+    }
 }

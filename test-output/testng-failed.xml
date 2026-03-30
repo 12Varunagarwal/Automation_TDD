@@ -8,9 +8,8 @@
           <include name="verifyMobileNumberTest"/>
           <include name="closeBrowser"/>
           <include name="pageTitleTest"/>
-          <include name="baseSetup"/>
           <include name="setupPage"/>
-          <include name="logoPresentTest"/>
+          <include name="setup"/>
         </methods>
       </class> <!-- Test.RegistrationPageTest -->
     </classes>
