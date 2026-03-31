@@ -1,62 +1,68 @@
 package com.amazon.pages;
 
-import java.time.Duration;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.amazon.base.BaseClass;
-import com.amazon.utilities.CustomWait;
-import com.amazon.utilities.configReader;
 
 public class RegistrationPage extends BaseClass {
 
-    @FindBy(xpath = "//input[@id='ap_phone_number']")
+    // ================= LOCATORS =================
+
+    @FindBy(id = "ap_phone_number")
     WebElement txtMobileNumber;
 
-    @FindBy(xpath = "//input[@id='ap_customer_name']")
+    @FindBy(id = "ap_customer_name")
     WebElement txtCustomerName;
 
-    @FindBy(xpath = "//input[@id='ap_password']")
+    @FindBy(id = "ap_password")
     WebElement txtPassword;
 
-    @FindBy(xpath = "//input[@id='continue']")
+    @FindBy(id = "continue")
     WebElement btnVerifyMobileNumber;
+
+
+
+    @FindBy(xpath = "//h1[contains(text(),'It looks like you are new')]")
+    WebElement txtProceedToCreateAnAccount;
+
+    @FindBy(xpath = "//input[@class='a-button-input']")
+    WebElement btnProceedToCreateAnAccount;
+
+    @FindBy(xpath = "//h1[contains(text(),'Create Account')]")
+    WebElement txtCreateAccount;
     
-	@FindBy(xpath="//h1[@class='a-size-medium-plus a-spacing-small']")
-	WebElement txtProceedToCreateAnAccount;
-	
-	@FindBy(xpath="//input[@class='a-button-input']")
-	WebElement btnProceedToCreateAnAccount;
-	
-	@FindBy(xpath="//h1[@class='a-spacing-small moa_desktop_signup']")
-	WebElement txtCreateAccount;
+    @FindBy(xpath = "//div[@class='a-row a-spacing-mini'][1]")
+    WebElement txtSolvePuzzle;
+    
+    
+    
 
-    // Constructor: call super(driver) to initialize BaseClass
+    // ================= CONSTRUCTOR =================
+
     public RegistrationPage(WebDriver driver) {
-    this.driver = driver;  // assign driver manually
-    configreader = new configReader();
-    PageFactory.initElements(driver, this);
+        super(driver);   // 🔥 IMPORTANT (BaseClass init)
+        PageFactory.initElements(driver, this);
+    }
 
-}
+    // ================= METHODS (CUSTOM WAIT BASED) =================
 
     public void enterMobileNumber(String number) {
-        // Use inherited method directly
-        enterText(txtMobileNumber, number);
+        sendKeysWithWait(txtMobileNumber, number, 10);
     }
 
     public void enterCustomerName(String name) {
-        enterText(txtCustomerName, name);
+        sendKeysWithWait(txtCustomerName, name, 10);
     }
 
     public void enterPassword(String password) {
-        enterText(txtPassword, password);
+        sendKeysWithWait(txtPassword, password, 10);
     }
 
     public void clickOnVerifyMobileNumberBtn() {
-        click(btnVerifyMobileNumber);
+        clickWithWait(btnVerifyMobileNumber, 10);
     }
 
     public void checkMobileNumberFunctionality(String number, String name, String pwd) {
@@ -65,21 +71,24 @@ public class RegistrationPage extends BaseClass {
         enterPassword(pwd);
         clickOnVerifyMobileNumberBtn();
     }
-    
+
+
+
+
     public String getTextLooksLikeNewToAmazon() {
-    	
-    	return getText(txtProceedToCreateAnAccount);
-    	
+        return getTextWithWait(txtProceedToCreateAnAccount, 10);
     }
-    
+
     public void clickOnProceedToCreateAnAccountButton() {
-        click(btnVerifyMobileNumber);
+        clickWithWait(btnProceedToCreateAnAccount, 10);  // 🔥 FIXED
+    }
+
+    public String getCreateAccountText() {
+        return getTextWithWait(txtCreateAccount, 10);
     }
     
-    public String getCreateAccountText() {
-    	
-    	return getText(txtCreateAccount);
-    	
+    public String getSolvePuzzleText() {
+        return getTextWithWait(txtSolvePuzzle, 10);
     }
-} 
- 
+}
+
