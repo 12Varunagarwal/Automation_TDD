@@ -9,35 +9,42 @@ import com.amazon.base.BaseClass;
 
 public class HomePage extends BaseClass {
 
-    @FindBy(xpath="//div[@id='nav-link-accountList']")
-    public WebElement accountsAndLists;
+    // ================= LOCATORS =================
 
-    @FindBy(xpath="//span[@class='nav-action-inner']")
-    public WebElement btnSignIn;
+    @FindBy(xpath = "//div[@id='nav-link-accountList']")
+    WebElement accountsAndLists;
 
-    @FindBy(xpath="//a[@class='nav-a']")
-    public WebElement btnNewCustomerStartHere;
+    @FindBy(xpath = "//span[@class='nav-action-inner']")
+    WebElement btnSignIn;
 
-    // ✅ Constructor that calls BaseClass constructor
+    @FindBy(xpath = "//a[@class='nav-a']")
+    WebElement btnNewCustomerStartHere;
+
+    // ================= CONSTRUCTOR =================
+
     public HomePage(WebDriver driver) {
-        super(driver);                  // Initialize BaseClass with driver
-        PageFactory.initElements(driver, this); // Optional, but safe
+        super(driver);
+        PageFactory.initElements(driver, this);
     }
+
+    // ================= METHODS (CUSTOM WAIT BASED) =================
 
     // Open Registration Page
     public void openRegistrationPage() {
-        moveToElement(accountsAndLists);    
-        click(btnNewCustomerStartHere);     
+        waitForVisibility(accountsAndLists, 10);     // hover se pehle wait
+        moveToElement(accountsAndLists);             // hover
+        clickWithWait(btnNewCustomerStartHere, 10);  // click with wait
     }
 
     // Open SignIn Page
     public void openSignInPage() {
-        moveToElement(accountsAndLists);    
-        click(btnSignIn);                   
+        waitForVisibility(accountsAndLists, 10);
+        moveToElement(accountsAndLists);
+        clickWithWait(btnSignIn, 10);
     }
 
     // Get Page Title
     public String getTitleOfThePage() {
-        return getTitle();                  
+        return driver.getTitle();
     }
 }

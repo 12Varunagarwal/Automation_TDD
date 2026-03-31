@@ -6,62 +6,64 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.amazon.base.BaseClass;
-import com.amazon.utilities.configReader;
 
 public class LoginPage extends BaseClass {
-	
-	@FindBy(id="ap_email_login")
-	WebElement txtEmailOrMobileNumber;
-	
-	@FindBy(xpath="//input[@type='password']")
-	WebElement btnContinue;
-	
-	@FindBy(xpath="//a[@id='ab-registration-ingress-link']")
-	WebElement lnkCreateaBussinessAccount;
-	
-	@FindBy(xpath="//input[@type='submit']")
-	WebElement btnSignInSubmit;
-	
 
-	
-	
-	
-	
-	
-	
-	 public LoginPage(WebDriver driver) {
-	        super(driver);                  // Initialize BaseClass with driver
-	        PageFactory.initElements(driver, this); // Optional, but safe
-	    }
-	
-	 
-	public String getTitleOfThePage() {
-		
-		return getTitle();
-	}
+    // ================= LOCATORS =================
 
-	public void enterEmailId(String string) {
-		// TODO Auto-generated method stub
-		enterText(txtEmailOrMobileNumber,string);
-		
-		
-	}
+    @FindBy(id = "ap_email_login")
+    WebElement txtEmailOrMobileNumber;
 
-	public void clickOnContinueButton() {
-		// TODO Auto-generated method stub
-			click(btnSignInSubmit);
-		
-	}
+    @FindBy(xpath = "//input[@type='password']")
+    WebElement txtPassword;
 
-	public void signInWithValidCredentials(String string, String string2) {
-		// TODO Auto-generated method stub
-		
-	}
+    @FindBy(xpath = "//a[@id='ab-registration-ingress-link']")
+    WebElement lnkCreateaBusinessAccount;
 
-	public String getUnregisteredEmailIdError() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	
-	
+    @FindBy(id = "continue")
+    WebElement btnSignInSubmit;
+
+    // ================= CONSTRUCTOR =================
+
+    public LoginPage(WebDriver driver) {
+        super(driver);  // 🔥 MUST (BaseClass init)
+        PageFactory.initElements(driver, this);
+    }
+
+    // ================= METHODS =================
+
+    public String getTitleOfThePage() {
+        return driver.getTitle();
+    }
+
+    public void enterEmailId(String email) {
+        sendKeysWithWait(txtEmailOrMobileNumber, email, 10);
+    }
+
+    public void clickOnContinueButton() {
+        clickWithWait(btnSignInSubmit, 10);
+    }
+
+    public void enterPassword(String password) {
+        sendKeysWithWait(txtPassword, password, 10);
+    }
+
+    public void clickOnSignInButton() {
+        clickWithWait(btnSignInSubmit, 10);
+    }
+
+    public void clickOnCreateBusinessAccount() {
+        clickWithWait(lnkCreateaBusinessAccount, 10);
+    }
+
+    public void signInWithValidCredentials(String email, String password) {
+        enterEmailId(email);
+        clickOnContinueButton();
+        enterPassword(password);
+        clickOnSignInButton();
+    }
+
+    public String getUnregisteredEmailIdError(WebElement errorElement) {
+        return getTextWithWait(errorElement, 10);
+    }
 }

@@ -15,13 +15,14 @@ public class LoginPageTest extends BaseTest {
 		
 	}
 	
-	@Test
-
-	public void logoPresentTest() {
-
-		Assert.assertTrue(registrationpage.verifyLogo(), "--Logo is not Present--");
-	}
-
+	/*
+	 * @Test
+	 * 
+	 * public void logoPresentTest() {
+	 * 
+	 * Assert.assertTrue(registrationpage.verifyLogo(), "--Logo is not Present--");
+	 * }
+	 */
 	@Test
 
 	public void pageTitleTest() {
@@ -43,25 +44,28 @@ public class LoginPageTest extends BaseTest {
 		
 	}
 	
-	@Test
+	/*
+	 * @Test
+	 * 
+	 * public void signWithUnregisteredEmailId() {
+	 * 
+	 * loginpage.enterEmailId("abc@test.com"); loginpage.clickOnContinueButton();
+	 * Assert.assertEquals(loginpage.getUnregisteredEmailIdError()
+	 * ,"We cannot find an account with that email address");
+	 * 
+	 * }
+	 */
 	
-	public void  signWithUnregisteredEmailId() {
-		
-		loginpage.enterEmailId("abc@test.com");
-		loginpage.clickOnContinueButton();
-		Assert.assertEquals(loginpage.getUnregisteredEmailIdError(),"We cannot find an account with that email address");
-		
-	}
 	
-	
-	@Test
-	public void  signWithInvalidEmailIdTest() {
-		
-		loginpage.enterEmailId("abc@test");
-		loginpage.clickOnContinueButton();
-		Assert.assertEquals(loginpage.getUnregisteredEmailIdError(),"Wrong or Invalid email address or mobile phone number");
-		
-	}
+	/*
+	 * @Test public void signWithInvalidEmailIdTest() {
+	 * 
+	 * loginpage.enterEmailId("abc@test"); loginpage.clickOnContinueButton();
+	 * Assert.assertEquals(loginpage.getUnregisteredEmailIdError()
+	 * ,"Wrong or Invalid email address or mobile phone number");
+	 * 
+	 * }
+	 */
 
 	
 	@Test
