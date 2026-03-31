@@ -93,4 +93,9 @@ public class BaseClass {
     public void enterText(WebElement element, int number) {
         enterText(element, String.valueOf(number));
     }
+    
+    public String getText(WebElement element) {
+        wait.waitForVisibilityOfElement(element);  // Wait until element is visible
+        return element.getText().trim();           // Get text and remove leading/trailing spaces
+    }
 }

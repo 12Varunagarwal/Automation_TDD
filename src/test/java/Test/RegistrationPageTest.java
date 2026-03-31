@@ -9,12 +9,13 @@ import com.amazon.pages.HomePage;
 import com.amazon.pages.RegistrationPage;
 
 public class RegistrationPageTest extends BaseTest {
-
+	
 	@BeforeMethod
 	public void setupPage() {
 	    homepage = new HomePage(driver);           // driver from BaseTest
 	    registrationpage = new RegistrationPage(driver);
-	    homepage.openRegistrationPage();           // navigate to registration page
+	    homepage.openRegistrationPage();   
+	    // navigate to registration page
 	}
 	
 	/*
@@ -36,8 +37,15 @@ public class RegistrationPageTest extends BaseTest {
 	@Test
 
 	public void verifyMobileNumberTest() {
-
+		loginpage.enterEmailId("varun.18bce1089@gmail.com");
+		loginpage.clickOnContinueButton();
+		String text=registrationpage.getTextLooksLikeNewToAmazon();
+		Assert.assertEquals(text, "It looks like you are new to Amazon","Text are not matching");
+		registrationpage.clickOnProceedToCreateAnAccountButton();
+		String text2=registrationpage.getCreateAccountText();
+		Assert.assertEquals(text, "Create Account","Text are not matching");
 		registrationpage.checkMobileNumberFunctionality("7905409667","Varun","dzfgdr12");
+		
 	}
 	
 

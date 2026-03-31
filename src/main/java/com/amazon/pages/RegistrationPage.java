@@ -24,6 +24,15 @@ public class RegistrationPage extends BaseClass {
 
     @FindBy(xpath = "//input[@id='continue']")
     WebElement btnVerifyMobileNumber;
+    
+	@FindBy(xpath="//h1[@class='a-size-medium-plus a-spacing-small']")
+	WebElement txtProceedToCreateAnAccount;
+	
+	@FindBy(xpath="//input[@class='a-button-input']")
+	WebElement btnProceedToCreateAnAccount;
+	
+	@FindBy(xpath="//h1[@class='a-spacing-small moa_desktop_signup']")
+	WebElement txtCreateAccount;
 
     // Constructor: call super(driver) to initialize BaseClass
     public RegistrationPage(WebDriver driver) {
@@ -55,6 +64,22 @@ public class RegistrationPage extends BaseClass {
         enterCustomerName(name);
         enterPassword(pwd);
         clickOnVerifyMobileNumberBtn();
+    }
+    
+    public String getTextLooksLikeNewToAmazon() {
+    	
+    	return getText(txtProceedToCreateAnAccount);
+    	
+    }
+    
+    public void clickOnProceedToCreateAnAccountButton() {
+        click(btnVerifyMobileNumber);
+    }
+    
+    public String getCreateAccountText() {
+    	
+    	return getText(txtCreateAccount);
+    	
     }
 } 
  
