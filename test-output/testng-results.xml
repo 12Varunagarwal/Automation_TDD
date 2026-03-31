@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-30T19:50:32 IST" name="TestSuite" finished-at="2026-03-30T19:50:38 IST" duration-ms="5638">
+  <suite started-at="2026-03-31T13:53:51 IST" name="TestSuite" finished-at="2026-03-31T13:53:56 IST" duration-ms="5532">
     <groups>
     </groups>
-    <test started-at="2026-03-30T19:50:32 IST" name="RegistrationTest" finished-at="2026-03-30T19:50:38 IST" duration-ms="5638">
+    <test started-at="2026-03-31T13:53:51 IST" name="RegistrationTest" finished-at="2026-03-31T13:53:56 IST" duration-ms="5532">
       <class name="Test.RegistrationPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test.RegistrationPageTest@7188af83]" started-at="2026-03-30T19:50:33 IST" name="setup" finished-at="2026-03-30T19:50:38 IST" duration-ms="5527" status="FAIL">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test.RegistrationPageTest@7188af83]" started-at="2026-03-31T13:53:51 IST" name="setup" finished-at="2026-03-31T13:53:56 IST" duration-ms="5458" status="FAIL">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[unknown error: net::ERR_CONNECTION_RESET
@@ -15,9 +15,9 @@
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [642e8f71ce1a4421a2d37d3af9cc1208, get {url=https://www.amazon.in/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\anp1209\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57196}, goog:processID: 30540, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57196/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 642e8f71ce1a4421a2d37d3af9cc1208]]>
+Command: [954a7ae3eb3e6bea97284059f6ebba51, get {url=https://www.amazon.in/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\anp1209\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56863}, goog:processID: 26600, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56863/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 954a7ae3eb3e6bea97284059f6ebba51]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_RESET
@@ -25,9 +25,9 @@ Session ID: 642e8f71ce1a4421a2d37d3af9cc1208]]>
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [642e8f71ce1a4421a2d37d3af9cc1208, get {url=https://www.amazon.in/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\anp1209\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57196}, goog:processID: 30540, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57196/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 642e8f71ce1a4421a2d37d3af9cc1208
+Command: [954a7ae3eb3e6bea97284059f6ebba51, get {url=https://www.amazon.in/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\anp1209\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56863}, goog:processID: 26600, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56863/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 954a7ae3eb3e6bea97284059f6ebba51
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -76,11 +76,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupPage()[pri:0, instance:Test.RegistrationPageTest@7188af83]" started-at="2026-03-30T19:50:38 IST" name="setupPage" finished-at="2026-03-30T19:50:38 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="setupPage()[pri:0, instance:Test.RegistrationPageTest@7188af83]" started-at="2026-03-31T13:53:56 IST" name="setupPage" finished-at="2026-03-31T13:53:56 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupPage -->
-        <test-method signature="pageTitleTest()[pri:0, instance:Test.RegistrationPageTest@7188af83]" started-at="2026-03-30T19:50:38 IST" name="pageTitleTest" finished-at="2026-03-30T19:50:38 IST" duration-ms="1" status="SKIP">
+        <test-method signature="pageTitleTest()[pri:0, instance:Test.RegistrationPageTest@7188af83]" started-at="2026-03-31T13:53:56 IST" name="pageTitleTest" finished-at="2026-03-31T13:53:56 IST" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[unknown error: net::ERR_CONNECTION_RESET
@@ -88,9 +88,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [642e8f71ce1a4421a2d37d3af9cc1208, get {url=https://www.amazon.in/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\anp1209\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57196}, goog:processID: 30540, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57196/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 642e8f71ce1a4421a2d37d3af9cc1208]]>
+Command: [954a7ae3eb3e6bea97284059f6ebba51, get {url=https://www.amazon.in/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\anp1209\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56863}, goog:processID: 26600, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56863/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 954a7ae3eb3e6bea97284059f6ebba51]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_RESET
@@ -98,9 +98,9 @@ Session ID: 642e8f71ce1a4421a2d37d3af9cc1208]]>
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [642e8f71ce1a4421a2d37d3af9cc1208, get {url=https://www.amazon.in/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\anp1209\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57196}, goog:processID: 30540, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57196/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 642e8f71ce1a4421a2d37d3af9cc1208
+Command: [954a7ae3eb3e6bea97284059f6ebba51, get {url=https://www.amazon.in/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\anp1209\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56863}, goog:processID: 26600, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56863/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 954a7ae3eb3e6bea97284059f6ebba51
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -149,19 +149,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageTitleTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Test.RegistrationPageTest@7188af83]" started-at="2026-03-30T19:50:38 IST" name="closeBrowser" finished-at="2026-03-30T19:50:38 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Test.RegistrationPageTest@7188af83]" started-at="2026-03-31T13:53:56 IST" name="closeBrowser" finished-at="2026-03-31T13:53:56 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test.RegistrationPageTest@7188af83]" started-at="2026-03-30T19:50:38 IST" name="setup" finished-at="2026-03-30T19:50:38 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test.RegistrationPageTest@7188af83]" started-at="2026-03-31T13:53:56 IST" name="setup" finished-at="2026-03-31T13:53:56 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupPage()[pri:0, instance:Test.RegistrationPageTest@7188af83]" started-at="2026-03-30T19:50:38 IST" name="setupPage" finished-at="2026-03-30T19:50:38 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="setupPage()[pri:0, instance:Test.RegistrationPageTest@7188af83]" started-at="2026-03-31T13:53:56 IST" name="setupPage" finished-at="2026-03-31T13:53:56 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupPage -->
-        <test-method signature="verifyMobileNumberTest()[pri:0, instance:Test.RegistrationPageTest@7188af83]" started-at="2026-03-30T19:50:38 IST" name="verifyMobileNumberTest" finished-at="2026-03-30T19:50:38 IST" duration-ms="1" status="SKIP">
+        <test-method signature="verifyMobileNumberTest()[pri:0, instance:Test.RegistrationPageTest@7188af83]" started-at="2026-03-31T13:53:56 IST" name="verifyMobileNumberTest" finished-at="2026-03-31T13:53:56 IST" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[unknown error: net::ERR_CONNECTION_RESET
@@ -169,9 +169,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [642e8f71ce1a4421a2d37d3af9cc1208, get {url=https://www.amazon.in/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\anp1209\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57196}, goog:processID: 30540, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57196/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 642e8f71ce1a4421a2d37d3af9cc1208]]>
+Command: [954a7ae3eb3e6bea97284059f6ebba51, get {url=https://www.amazon.in/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\anp1209\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56863}, goog:processID: 26600, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56863/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 954a7ae3eb3e6bea97284059f6ebba51]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_RESET
@@ -179,9 +179,9 @@ Session ID: 642e8f71ce1a4421a2d37d3af9cc1208]]>
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [642e8f71ce1a4421a2d37d3af9cc1208, get {url=https://www.amazon.in/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\anp1209\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57196}, goog:processID: 30540, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57196/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 642e8f71ce1a4421a2d37d3af9cc1208
+Command: [954a7ae3eb3e6bea97284059f6ebba51, get {url=https://www.amazon.in/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\anp1209\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56863}, goog:processID: 26600, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56863/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 954a7ae3eb3e6bea97284059f6ebba51
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -230,7 +230,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyMobileNumberTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Test.RegistrationPageTest@7188af83]" started-at="2026-03-30T19:50:38 IST" name="closeBrowser" finished-at="2026-03-30T19:50:38 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Test.RegistrationPageTest@7188af83]" started-at="2026-03-31T13:53:56 IST" name="closeBrowser" finished-at="2026-03-31T13:53:56 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

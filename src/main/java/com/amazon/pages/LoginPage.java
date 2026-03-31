@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.amazon.base.BaseClass;
+import com.amazon.utilities.configReader;
 
 public class LoginPage extends BaseClass {
 	
@@ -18,16 +19,22 @@ public class LoginPage extends BaseClass {
 	@FindBy(xpath="//a[@id='ab-registration-ingress-link']")
 	WebElement lnkCreateaBussinessAccount;
 	
-	@FindBy(id="signInSubmit")
+	@FindBy(xpath="//input[@type='submit']")
 	WebElement btnSignInSubmit;
 	
+
 	
 	
-	public LoginPage(WebDriver driver) {
-		
-		PageFactory.initElements(driver,this);
-		
-	}
+	
+	
+	
+	
+	 public LoginPage(WebDriver driver) {
+	        super(driver);                  // Initialize BaseClass with driver
+	        PageFactory.initElements(driver, this); // Optional, but safe
+	    }
+	
+	 
 	public String getTitleOfThePage() {
 		
 		return getTitle();
@@ -35,11 +42,14 @@ public class LoginPage extends BaseClass {
 
 	public void enterEmailId(String string) {
 		// TODO Auto-generated method stub
+		enterText(txtEmailOrMobileNumber,string);
+		
 		
 	}
 
 	public void clickOnContinueButton() {
 		// TODO Auto-generated method stub
+			click(btnSignInSubmit);
 		
 	}
 
@@ -52,5 +62,6 @@ public class LoginPage extends BaseClass {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
+	
+	
 }
